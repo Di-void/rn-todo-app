@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import Home from "./src/screens/Home";
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text>Yup this works for now!</Text>
+    <View>
+      <Home />
     </View>
   );
 }
