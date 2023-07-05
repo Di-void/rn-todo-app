@@ -1,10 +1,13 @@
 import { View } from "react-native";
-import Home from "./src/screens/Home";
+import ScreenWrapper from "./src/components/ScreenWrapper";
+import Tabs from "./src/components/Tabs";
 
 export default function App() {
   return (
     <View>
-      <Home />
+      <ScreenWrapper>
+        <Tabs />
+      </ScreenWrapper>
     </View>
   );
 }
