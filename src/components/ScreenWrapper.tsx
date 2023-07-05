@@ -10,13 +10,8 @@ const BackgroundImage = require("../../assets/images/bg-mobile-dark.jpg");
 const ScreenWrapper = ({ children }: ScreenWrapperProps) => {
   return (
     <SafeAreaView className="bg-bg-violet basis-full">
-      <ImageBackground
-        source={BackgroundImage}
-        className="justify-center"
-        style={{ flex: 0.2 }}
-        imageStyle={{ resizeMode: "cover" }}
-      >
-        <Text className="text-white font-bold text-3xl uppercase text-center">
+      <ImageBackground source={BackgroundImage} style={{ flex: 0.3 }}>
+        <Text className="text-white mt-[60] tracking-[18px] font-bold text-3xl uppercase text-center">
           Todo
         </Text>
       </ImageBackground>
