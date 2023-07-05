@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
+import Input from "../components/Input";
 
 const Home = () => {
   return (
-    <View>
-      <Text className="text-white">Home Screen</Text>
+    <View className="p-4">
+      <Input />
     </View>
   );
 };

@@ -11,7 +11,7 @@ const ScreenWrapper = ({ children }: ScreenWrapperProps) => {
   return (
     <SafeAreaView className="bg-bg-violet basis-full">
       <ImageBackground source={BackgroundImage} style={{ flex: 0.3 }}>
-        <Text className="text-white mt-[60] tracking-[18px] font-bold text-3xl uppercase text-center">
+        <Text className="text-white mt-[60] tracking-[18] font-bold text-3xl uppercase text-center">
           Todo
         </Text>
       </ImageBackground>
@@ -19,11 +19,5 @@ const ScreenWrapper = ({ children }: ScreenWrapperProps) => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default ScreenWrapper;
