@@ -1,13 +1,11 @@
 import { View, Text } from "react-native";
 import Home from "../screens/Home";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const Tabs = () => {
   return (
-    <SafeAreaView>
-      <Text>Tab Screens</Text>
+    <View className="border border-red-50" style={{ flex: 0.8 }}>
       <Home />
-    </SafeAreaView>
+    </View>
   );
 };
 
