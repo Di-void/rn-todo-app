@@ -2,7 +2,7 @@ import { View } from "react-native";
 import Checkbox from "expo-checkbox";
 import { useState } from "react";
 
-const CheckBox = () => {
+const InputCheckBox = () => {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <View style={{ flex: 0.2 }} className="h-full items-center justify-center">
@@ -15,4 +15,4 @@ const CheckBox = () => {
   );
 };
 
-export default CheckBox;
+export default InputCheckBox;
