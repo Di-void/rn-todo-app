@@ -1,17 +1,9 @@
 import { useState } from "react";
-import {
-  View,
-  KeyboardAvoidingView,
-  Platform,
-  Text,
-  TextInput,
-  StyleSheet,
-} from "react-native";
+import { View, TextInput, StyleSheet } from "react-native";
 import CheckBox from "./CheckBox";
 
 const Input = () => {
   const [task, setNewTask] = useState("");
-  const [todoStatus, setTodoStatus] = useState("");
   return (
     <View className="bg-element-violet h-14 rounded-md flex-row items-center overflow-hidden">
       <CheckBox />

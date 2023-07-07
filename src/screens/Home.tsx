@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text, KeyboardAvoidingView, Platform } from "react-native";
+import { View } from "react-native";
 import Input from "../components/Input";
 
 const Home = () => {
   return (
-    <View className="p-4 basis-full">
+    <View className="p-2 h-full">
       <Input />
     </View>
   );
