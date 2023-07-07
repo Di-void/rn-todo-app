@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View } from "react-native";
 import Checkbox from "expo-checkbox";
 import { useState } from "react";
 
@@ -14,11 +14,5 @@ const CheckBox = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  checkbox: {
-    borderColor: "red",
-  },
-});
 
 export default CheckBox;
