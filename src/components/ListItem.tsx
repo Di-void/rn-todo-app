@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import Checkbox from "expo-checkbox";
+import CustomCheckBox from "./CustomCheckBox";
 import CloseButton from "./CloseButton";
 
 interface ListItemProps {
@@ -10,7 +10,7 @@ const ListItem = ({ todo }: ListItemProps) => {
   return (
     <View className="py-6 px-4 flex-row justify-between items-center border-b border-gray-500">
       <View>
-        <Checkbox className="rounded-xl p-2.5" />
+        <CustomCheckBox />
       </View>
       <Text className="text-gray-300 w-3/4">{todo}</Text>
       <View>

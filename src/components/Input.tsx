@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
-import InputCheckBox from "./InputCheckBox";
+import CustomCheckBox from "./CustomCheckBox";
 
 const Input = () => {
   const [task, setNewTask] = useState("");
   return (
     <View className="bg-element-violet h-14 rounded-md flex-row items-center overflow-hidden">
-      <InputCheckBox />
+      <View
+        style={{ flex: 0.2 }}
+        className="h-full items-center justify-center"
+      >
+        <CustomCheckBox />
+      </View>
       <TextInput
         className="px-4 text-white h-full"
         style={{ flex: 0.8 }}
