@@ -29,54 +29,59 @@ export const todos = [
     todo: "Complete Todo App on Frontend Mentor",
     complete: false,
   },
-  {
-    id: "7",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "8",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "9",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "10",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "11",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "12",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "13",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "14",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "15",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
-  {
-    id: "16",
-    todo: "Complete Todo App on Frontend Mentor",
-    complete: false,
-  },
 ];
+
+// for debugging
+
+// [
+//   {
+//     id: "7",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "8",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "9",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "10",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "11",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "12",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "13",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "14",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "15",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+//   {
+//     id: "16",
+//     todo: "Complete Todo App on Frontend Mentor",
+//     complete: false,
+//   },
+// ];

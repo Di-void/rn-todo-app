@@ -8,7 +8,7 @@ interface ListItemProps {
 
 const ListItem = ({ todo }: ListItemProps) => {
   return (
-    <View className="p-6 flex-row justify-between items-center">
+    <View className="py-6 px-4 flex-row justify-between items-center border-b border-gray-500">
       <View>
         <Checkbox className="rounded-xl p-2.5" />
       </View>
