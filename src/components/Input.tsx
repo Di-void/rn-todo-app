@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import CustomCheckBox from "./CustomCheckBox";
+import globalStyle from "../Style";
 
 const Input = () => {
   const [task, setNewTask] = useState("");
@@ -14,7 +15,7 @@ const Input = () => {
       </View>
       <TextInput
         className="px-4 text-white h-full"
-        style={{ flex: 0.8 }}
+        style={[{ flex: 0.8 }, globalStyle.fontStyle]}
         placeholder="Create a new todo..."
         value={task}
         onChangeText={setNewTask}
