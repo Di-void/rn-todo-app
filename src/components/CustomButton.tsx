@@ -8,7 +8,11 @@ interface ButtonProps {
 
 const CustomButton = ({ label, action }: ButtonProps) => {
   return (
-    <Pressable className="" onPress={action}>
+    <Pressable
+      className=""
+      onPress={action}
+      hitSlop={{ bottom: 15, left: 15, right: 15, top: 15 }}
+    >
       {typeof label === "string" ? (
         <Text className="text-gray-400 capitalize tracking-wider">{label}</Text>
       ) : (
