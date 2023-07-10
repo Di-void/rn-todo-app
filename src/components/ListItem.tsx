@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import CustomCheckBox from "./CustomCheckBox";
-import CloseButton from "./CloseButton";
+import CustomButton from "./CustomButton";
+import { AntDesign } from "@expo/vector-icons";
 
 interface ListItemProps {
   todo: string;
@@ -14,7 +15,10 @@ const ListItem = ({ todo }: ListItemProps) => {
       </View>
       <Text className="text-gray-300 w-3/4">{todo}</Text>
       <View>
-        <CloseButton />
+        <CustomButton
+          label={<AntDesign name="close" size={24} color="#6b7280" />}
+          action={() => alert("Close Button")}
+        />
       </View>
     </View>
   );

@@ -18,7 +18,7 @@ const Input = () => {
         placeholder="Create a new todo..."
         value={task}
         onChangeText={setNewTask}
-        placeholderTextColor="#94a3b8"
+        placeholderTextColor="#9ca3af"
       />
     </View>
   );
