@@ -1,9 +1,8 @@
-import React from "react";
 import { View } from "react-native";
 import Input from "../components/Input";
 import List from "../components/List";
 
-const Home = () => {
+const Active = () => {
   return (
     <View className="p-2 h-full">
       <Input />
@@ -12,6 +11,6 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Active;
 
 // for debugging: border border-white

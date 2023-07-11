@@ -6,6 +6,7 @@ import {
   useFonts,
   JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -17,11 +18,13 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView className="bg-bg-violet h-full">
-      <ScreenWrapper>
-        <Tabs />
-      </ScreenWrapper>
-      <StatusBar style="light" />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView className="bg-bg-violet h-full">
+        <ScreenWrapper>
+          <Tabs />
+        </ScreenWrapper>
+        <StatusBar style="light" />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
