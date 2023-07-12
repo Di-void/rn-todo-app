@@ -3,12 +3,18 @@ import Home from "../screens/Home";
 import Active from "../screens/Active";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import globalStyle from "../Style";
+import { twMerge } from "tailwind-merge";
+import { useKeyboardStats } from "../hooks/useKeyboardStats";
 
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
+  const { isKeyboardOpen } = useKeyboardStats();
+
   return (
-    <View className="-mt-28 p-2 h-full border border-red-500">
+    <View
+      className={twMerge(`-mt-28 p-2 h-full ${isKeyboardOpen && "h-[120%]"}`)}
+    >
       <Tab.Navigator
         screenOptions={{
           tabBarStyle: {

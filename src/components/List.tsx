@@ -8,7 +8,10 @@ const List = () => {
     return <ListItem todo={item.todo} />;
   };
   return (
-    <View className="h-fit max-h-[440] mt-4 bg-element-violet-2 rounded-md overflow-hidden">
+    <View
+      className="bg-element-violet-2 mt-4 rounded-md overflow-hidden"
+      style={{ flex: 1 }}
+    >
       <FlatList
         data={todos}
         renderItem={renderItem}
@@ -21,4 +24,4 @@ const List = () => {
 
 export default List;
 
-// for debugging: border border-white
+// for debugging: border border-white -mt-28 mt-4
