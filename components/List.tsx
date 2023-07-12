@@ -8,7 +8,7 @@ const List = () => {
     return <ListItem todo={item.todo} />;
   };
   return (
-    <View className="h-fit max-h-[440] mt-4 bg-element-violet-2 rounded-md overflow-hidden">
+    <View className="h-fit mt-4 bg-element-violet-2 rounded-md overflow-hidden">
       <FlatList
         data={todos}
         renderItem={renderItem}
