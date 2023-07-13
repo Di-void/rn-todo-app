@@ -1,4 +1,4 @@
-import ScreensWrapper from "./src/components/ScreenWrapper";
+import Header from "./src/components/Header";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -6,6 +6,8 @@ import {
   JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
 import { NavigationContainer } from "@react-navigation/native";
+import { View } from "react-native";
+import Tabs from "./src/components/Tabs";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -17,11 +19,12 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <SafeAreaView className="bg-bg-violet h-full">
-        <ScreensWrapper />
-        <StatusBar style="light" />
-      </SafeAreaView>
-    </NavigationContainer>
+    <SafeAreaView className="bg-bg-violet" style={{ flex: 1 }}>
+      <Header />
+      <View className="items-center" style={{ bottom: 20, maxHeight: "50%" }}>
+        <Tabs />
+      </View>
+      <StatusBar style="light" />
+    </SafeAreaView>
   );
 }

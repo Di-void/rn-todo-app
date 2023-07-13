@@ -1,9 +1,13 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import Home from "../screens/Home";
 
 const Tabs = () => {
   return (
-    <View>
-      <Text className="text-white">Tabs</Text>
+    <View
+      style={{ width: "90%" }}
+      className="bg-element-violet-2 rounded-md overflow-hidden"
+    >
+      <Home />
     </View>
   );
 };
