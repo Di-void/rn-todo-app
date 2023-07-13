@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import CustomButton from "./CustomButtonCopy";
 
 export default function Footer() {
   return (
@@ -7,7 +8,10 @@ export default function Footer() {
         <Text className="text-gray-400">5 items left</Text>
       </View>
       <View>
-        <Text className="text-white">Clear completed</Text>
+        <CustomButton
+          label={"clear completed"}
+          action={() => alert("Clear completed todos")}
+        />
       </View>
     </View>
   );
