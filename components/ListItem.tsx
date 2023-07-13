@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import CustomCheckBox from "./CustomCheckBox";
 import CustomButton from "./CustomButton";
 import { AntDesign } from "@expo/vector-icons";
-import globalStyle from "../Style";
+import globalStyle from "../style";
 
 interface ListItemProps {
   todo: string;

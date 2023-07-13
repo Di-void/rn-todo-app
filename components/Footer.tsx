@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import CustomButton from "./CustomButton";
-import globalStyle from "../Style";
+import globalStyle from "../style";
 
 const Footer = () => {
   return (

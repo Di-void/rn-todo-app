@@ -1,6 +1,6 @@
 import { Pressable } from "react-native";
 import { Text } from "react-native";
-import globalStyle from "../Style";
+import globalStyle from "../style";
 
 interface ButtonProps {
   label: React.ReactNode | string;
