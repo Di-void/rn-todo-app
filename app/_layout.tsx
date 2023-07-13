@@ -4,6 +4,7 @@ import { Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import Header from "../components/Header";
 // TODO -> Create custom bottom tab bar
+// TODO -> add custom fonts
 
 export default function AppLayout() {
   return (
