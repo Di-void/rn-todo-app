@@ -1,5 +1,4 @@
-import ScreenWrapper from "./src/components/ScreenWrapper";
-import Tabs from "./src/components/Tabs";
+import ScreensWrapper from "./src/components/ScreenWrapper";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -20,9 +19,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <SafeAreaView className="bg-bg-violet h-full">
-        <ScreenWrapper>
-          <Tabs />
-        </ScreenWrapper>
+        <ScreensWrapper />
         <StatusBar style="light" />
       </SafeAreaView>
     </NavigationContainer>

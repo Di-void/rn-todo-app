@@ -6,15 +6,15 @@ import globalStyle from "../Style";
 const Input = () => {
   const [task, setNewTask] = useState("");
   return (
-    <View className="bg-element-violet h-14 rounded-md flex-row items-center overflow-hidden">
-      <View
-        style={{ flex: 0.2 }}
-        className="h-full items-center justify-center"
-      >
+    <View
+      className="flex-row rounded-md bg-element-violet overflow-hidden py-2"
+      style={{ width: "85%" }}
+    >
+      <View style={{ flex: 0.15 }} className="items-center justify-center p-2">
         <CustomCheckBox />
       </View>
       <TextInput
-        className="px-4 text-white h-full"
+        className="p-2 text-white"
         style={[{ flex: 0.8 }, globalStyle.fontStyle]}
         placeholder="Create a new todo..."
         value={task}
