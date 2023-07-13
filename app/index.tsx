@@ -1,11 +1,9 @@
 import { View, Text } from "react-native";
 
-const Home = () => {
+export default function IndexPage() {
   return (
-    <View>
-      <Text>Hello world</Text>
+    <View className="bg-red-200">
+      <Text className="text-red-900">Hello, world!</Text>
     </View>
   );
-};
-
-export default Home;
+}
