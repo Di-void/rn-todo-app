@@ -1,9 +1,8 @@
-import { View, Text } from "react-native";
 import Checkbox from "expo-checkbox";
-import { LinearGradient } from "expo-linear-gradient";
 import { useState } from "react";
+import { LinearGradient } from "expo-linear-gradient";
 
-export default function CustomCheckBox() {
+const CustomCheckBox = () => {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <LinearGradient
@@ -24,4 +23,6 @@ export default function CustomCheckBox() {
       />
     </LinearGradient>
   );
-}
+};
+
+export default CustomCheckBox;

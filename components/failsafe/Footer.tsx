@@ -1,11 +1,14 @@
 import { View, Text } from "react-native";
-import CustomButton from "./CustomButtonCopy";
+import CustomButton from "./failsafe/CustomButton";
+import globalStyle from "../style";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <View className="px-4 py-6 flex-row justify-between">
       <View>
-        <Text className="text-gray-400">5 items left</Text>
+        <Text style={globalStyle.fontStyle} className="text-gray-400">
+          5 items left
+        </Text>
       </View>
       <View>
         <CustomButton
@@ -15,4 +18,6 @@ export default function Footer() {
       </View>
     </View>
   );
-}
+};
+
+export default Footer;

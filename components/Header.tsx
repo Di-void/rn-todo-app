@@ -1,5 +1,5 @@
 import { View, Text, ImageBackground } from "react-native";
-import Input from "./InputCopy";
+import Input from "./Input";
 
 const BackgroundImage = require("../assets/images/bg-mobile-dark.jpg");
 

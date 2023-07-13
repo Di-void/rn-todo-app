@@ -1,7 +1,7 @@
 import { View, FlatList } from "react-native";
 import { todos } from "../mock-data";
-import ListItem from "../components/ListItemCopy";
-import Footer from "../components/FooterCopy";
+import ListItem from "../components/ListItem";
+import Footer from "../components/Footer";
 
 export default function IndexPage() {
   const renderItem = ({ item }: { item: (typeof todos)[0] }) => {
