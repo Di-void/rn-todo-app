@@ -4,7 +4,7 @@ import ListItem from "../components/ListItem";
 import Footer from "../components/Footer";
 import globalStyles from "../style";
 
-export default function IndexPage() {
+export default function CompletedPage() {
   const renderItem = ({ item }: { item: (typeof todos)[0] }) => {
     return <ListItem todo={item.todo} />;
   };
