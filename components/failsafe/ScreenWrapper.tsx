@@ -4,7 +4,7 @@ interface ScreenWrapperProps {
   children: React.ReactNode;
 }
 
-const BackgroundImage = require("../../assets/images/bg-mobile-dark.jpg");
+const BackgroundImage = require("../assets/images/bg-mobile-dark.jpg");
 
 const ScreenWrapper = ({ children }: ScreenWrapperProps) => {
   return (

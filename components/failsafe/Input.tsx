@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
-import CustomCheckBox from "./CustomCheckBox";
-import globalStyle from "../Style";
+import CustomCheckBox from "./failsafe/CustomCheckBox";
+import globalStyle from "../style";
 
 const Input = () => {
   const [task, setNewTask] = useState("");

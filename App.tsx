@@ -1,5 +1,5 @@
-import ScreenWrapper from "./src/components/ScreenWrapper";
-import Tabs from "./src/components/Tabs";
+import ScreenWrapper from "./components/ScreenWrapper";
+import Tabs from "./components/Tabs";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
