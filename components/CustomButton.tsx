@@ -1,4 +1,5 @@
 import { Pressable, Text } from "react-native";
+import globalStyles from "../style";
 
 interface ButtonProps {
   label: React.ReactNode | string;
@@ -8,12 +9,16 @@ interface ButtonProps {
 export default function CustomButton({ label, action }: ButtonProps) {
   return (
     <Pressable
-      className=""
       onPress={action}
       hitSlop={{ bottom: 15, left: 15, right: 15, top: 15 }}
     >
       {typeof label === "string" ? (
-        <Text className="text-gray-400 capitalize tracking-wider">{label}</Text>
+        <Text
+          className="text-gray-400 capitalize tracking-wider"
+          style={globalStyles.fontStyle}
+        >
+          {label}
+        </Text>
       ) : (
         label
       )}

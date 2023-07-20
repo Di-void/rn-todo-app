@@ -24,6 +24,7 @@ export default function TabBar() {
                 className={`${
                   index === val ? "text-active-blue" : "text-gray-400"
                 } capitalize font-extrabold text-lg`}
+                style={globalStyles.fontStyle}
               >
                 {label}
               </Text>
