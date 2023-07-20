@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import CustomCheckBox from "./CustomCheckBox";
 import { AntDesign } from "@expo/vector-icons";
 import CustomButton from "./CustomButton";
+import globalStyles from "../style";
 
 interface ListItemProps {
   todo: string;
@@ -13,7 +14,9 @@ export default function ListItem({ todo }: ListItemProps) {
       <View>
         <CustomCheckBox />
       </View>
-      <Text className="text-gray-300 w-3/4">{todo}</Text>
+      <Text className="text-gray-300 w-3/4" style={globalStyles.fontStyle}>
+        {todo}
+      </Text>
       <View>
         <CustomButton
           label={<AntDesign name="close" size={24} color="#6b7280" />}

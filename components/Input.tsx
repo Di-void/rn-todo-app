@@ -1,6 +1,7 @@
 import { View, TextInput } from "react-native";
 import { useState } from "react";
 import CustomCheckBox from "./CustomCheckBox";
+import globalStyles from "../style";
 
 export default function Input() {
   const [task, setNewTask] = useState("");
@@ -15,7 +16,7 @@ export default function Input() {
       </View>
       <TextInput
         className="p-2 text-white"
-        style={{ flex: 0.85 }}
+        style={[{ flex: 0.85 }, globalStyles.fontStyle]}
         value={task}
         onChangeText={setNewTask}
         placeholderTextColor="#9ca3af"
