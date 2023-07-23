@@ -1,15 +1,24 @@
-import { View, Text } from "react-native";
 import Checkbox from "expo-checkbox";
 import { LinearGradient } from "expo-linear-gradient";
-import { useState } from "react";
+import { useTaskStore } from "../stores/task-store";
+import { Todo } from "../types/todo";
 
-export default function CustomCheckBox() {
-  const [isChecked, setIsChecked] = useState(false);
+interface CustomCheckBoxProps {
+  todo?: Todo;
+}
+
+export default function CustomCheckBox({ todo }: CustomCheckBoxProps) {
+  const setTodoStatus = useTaskStore((state) => state.setTodoStatus);
+
+  const setIsChecked = () => {
+    setTodoStatus(todo?.id);
+  };
+
   return (
     <LinearGradient
       className="rounded-xl"
       colors={
-        isChecked
+        todo?.complete
           ? ["hsl(192, 100%, 67%)", "hsl(280, 87%, 65%)"]
           : ["transparent", "transparent"]
       }
@@ -18,9 +27,9 @@ export default function CustomCheckBox() {
     >
       <Checkbox
         className="rounded-xl p-2.5"
-        value={isChecked}
+        value={todo?.complete}
         onValueChange={setIsChecked}
-        color={isChecked ? "transparent" : undefined}
+        color={todo?.complete ? "transparent" : undefined}
       />
     </LinearGradient>
   );
