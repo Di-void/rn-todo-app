@@ -3,19 +3,20 @@ import CustomCheckBox from "./CustomCheckBox";
 import { AntDesign } from "@expo/vector-icons";
 import CustomButton from "./CustomButton";
 import globalStyles from "../style";
+import type { Todo } from "../types/todo";
 
 interface ListItemProps {
-  todo: string;
+  todo: Todo;
 }
 
 export default function ListItem({ todo }: ListItemProps) {
   return (
     <View className="py-6 px-4 flex-row justify-between items-center border-b border-gray-500">
       <View>
-        <CustomCheckBox />
+        <CustomCheckBox todo={todo} />
       </View>
       <Text className="text-gray-300 w-3/4" style={globalStyles.fontStyle}>
-        {todo}
+        {todo.todo}
       </Text>
       <View>
         <CustomButton
