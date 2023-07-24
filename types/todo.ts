@@ -11,6 +11,8 @@ export interface Input {
 
 export type State = {
   todos: Todo[];
+  activeTodos: () => Todo[];
+  completedTodos: () => Todo[];
 };
 
 export type Actions = {
