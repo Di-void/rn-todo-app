@@ -1,22 +1,24 @@
 import { View, TextInput } from "react-native";
 import { useState } from "react";
-import CustomCheckBox from "./CustomCheckBox";
+import InputCheckBox from "./input-checkbox";
 import globalStyles from "../style";
 import { useTaskStore } from "../stores/task-store";
 import { Todo } from "../types/todo";
 
 export default function Input() {
   const [task, setNewTask] = useState("");
+  const [isTodoComplete, setIsTodoComplete] = useState(false);
   const addTodo = useTaskStore((state) => state.addTodo);
   const addNewTodo = () => {
     if (task.trim() === "") return;
     const newTodo: Todo = {
       id: Math.random().toString(36),
       todo: task,
-      complete: false,
+      complete: isTodoComplete,
     };
     addTodo(newTodo);
     setNewTask("");
+    setIsTodoComplete(false);
   };
 
   return (
@@ -25,7 +27,10 @@ export default function Input() {
       style={{ width: "85%" }}
     >
       <View style={{ flex: 0.15 }} className="items-center justify-center p-2">
-        <CustomCheckBox />
+        <InputCheckBox
+          isTodoCompleted={isTodoComplete}
+          setIsTodoCompleted={setIsTodoComplete}
+        />
       </View>
       <TextInput
         className="p-2 text-white"
