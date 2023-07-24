@@ -12,5 +12,9 @@ export const useTaskStore = create(
           item.id === id ? { ...item, complete: !item.complete } : item
         );
       }),
+    addTodo: (payload) =>
+      set((state) => {
+        state.todos = [payload, ...state.todos];
+      }),
   }))
 );

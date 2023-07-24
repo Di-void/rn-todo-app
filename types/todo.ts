@@ -4,10 +4,16 @@ export interface Todo {
   complete: boolean;
 }
 
+export interface Input {
+  todo: string;
+  complete: boolean;
+}
+
 export type State = {
   todos: Todo[];
 };
 
 export type Actions = {
   setTodoStatus: (id: string) => void;
+  addTodo: (payload: Todo) => void;
 };

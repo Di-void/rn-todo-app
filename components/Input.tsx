@@ -2,9 +2,22 @@ import { View, TextInput } from "react-native";
 import { useState } from "react";
 import CustomCheckBox from "./CustomCheckBox";
 import globalStyles from "../style";
+import { useTaskStore } from "../stores/task-store";
+import { Todo } from "../types/todo";
 
 export default function Input() {
   const [task, setNewTask] = useState("");
+  const addTodo = useTaskStore((state) => state.addTodo);
+  const addNewTodo = () => {
+    if (task.trim() === "") return;
+    const newTodo: Todo = {
+      id: Math.random().toString(36),
+      todo: task,
+      complete: false,
+    };
+    addTodo(newTodo);
+    setNewTask("");
+  };
 
   return (
     <View
@@ -21,6 +34,7 @@ export default function Input() {
         onChangeText={setNewTask}
         placeholderTextColor="#9ca3af"
         placeholder="Create a new todo..."
+        onSubmitEditing={addNewTodo}
       />
     </View>
   );
