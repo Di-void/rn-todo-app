@@ -15,7 +15,16 @@ export default function ListItem({ todo }: ListItemProps) {
       <View>
         <CustomCheckBox todo={todo} />
       </View>
-      <Text className="text-gray-300 w-3/4" style={globalStyles.fontStyle}>
+      <Text
+        className="w-3/4"
+        style={[
+          globalStyles.fontStyle,
+          {
+            textDecorationLine: todo.complete ? "line-through" : undefined,
+            color: todo.complete ? "#9ca3af" : "#d1d5db",
+          },
+        ]}
+      >
         {todo.todo}
       </Text>
       <View>
