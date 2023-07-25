@@ -11,6 +11,7 @@ export interface Input {
 
 export type State = {
   todos: Todo[];
+  activeAndTextFormat: () => { itemsLeft: number; "text-format": string };
   activeTodos: () => Todo[];
   completedTodos: () => Todo[];
 };
