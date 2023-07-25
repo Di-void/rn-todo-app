@@ -1,5 +1,4 @@
 import { View, FlatList } from "react-native";
-import { todos } from "../mock-data";
 import ListItem from "../components/ListItem";
 import Footer from "../components/Footer";
 import globalStyles from "../style";
