@@ -4,6 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import CustomButton from "./CustomButton";
 import globalStyles from "../style";
 import type { Todo } from "../types/todo";
+import { removeTodoItem } from "../stores/task-store";
 
 interface ListItemProps {
   todo: Todo;
@@ -30,7 +31,7 @@ export default function ListItem({ todo }: ListItemProps) {
       <View>
         <CustomButton
           label={<AntDesign name="close" size={24} color="#6b7280" />}
-          action={() => alert("Remove Todo")}
+          action={() => removeTodoItem(todo.id)}
         />
       </View>
     </View>

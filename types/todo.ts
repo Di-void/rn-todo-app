@@ -11,6 +11,7 @@ export interface Input {
 
 export type State = {
   todos: Todo[];
+  activeAndTextFormat: () => { itemsLeft: number; "text-format": string };
   activeTodos: () => Todo[];
   completedTodos: () => Todo[];
 };
@@ -18,4 +19,5 @@ export type State = {
 export type Actions = {
   setTodoStatus: (id: string) => void;
   addTodo: (payload: Todo) => void;
+  clearCompletedTodos: () => void;
 };
