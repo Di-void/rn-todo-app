@@ -18,5 +18,17 @@ export const useTaskStore = create(
       set((state) => {
         state.todos = [payload, ...state.todos];
       }),
+    clearCompletedTodos: () =>
+      set((state) => {
+        state.todos = state.todos.filter((item) => !item.complete);
+      }),
   }))
 );
+
+// this function is outside of the store because
+// i don't want to create this function everytime
+// the `list-item` component is re-rendered
+export const removeTodoItem = (id: string) =>
+  useTaskStore.setState((state) => ({
+    todos: state.todos.filter((item) => item.id !== id),
+  }));

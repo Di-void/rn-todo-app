@@ -18,4 +18,5 @@ export type State = {
 export type Actions = {
   setTodoStatus: (id: string) => void;
   addTodo: (payload: Todo) => void;
+  clearCompletedTodos: () => void;
 };

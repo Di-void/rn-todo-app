@@ -1,8 +1,12 @@
 import { View, Text } from "react-native";
 import CustomButton from "./CustomButton";
 import globalStyles from "../style";
+import { useTaskStore } from "../stores/task-store";
 
 export default function Footer() {
+  const clearCompletedTodos = useTaskStore(
+    (state) => state.clearCompletedTodos
+  );
   return (
     <View className="px-4 py-6 flex-row justify-between">
       <View>
@@ -11,10 +15,7 @@ export default function Footer() {
         </Text>
       </View>
       <View>
-        <CustomButton
-          label={"clear completed"}
-          action={() => alert("Clear completed todos")}
-        />
+        <CustomButton label={"clear completed"} action={clearCompletedTodos} />
       </View>
     </View>
   );
