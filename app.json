@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Deez-todo",
-    "slug": "Deez-todo",
+    "slug": "todo-app",
     "scheme": "acme",
     "version": "1.0.0",
     "orientation": "portrait",
