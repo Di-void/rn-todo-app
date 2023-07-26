@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "todo-app",
-    "slug": "todo-app",
+    "name": "Deez-todo",
+    "slug": "Deez-todo",
     "scheme": "acme",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,16 +14,23 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "app.deevoid.todoapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.deevoid.todoapp"
     },
     "web": {
       "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bfafc222-643f-4fa9-8a1e-814b1d82621d"
+      }
     }
   }
 }
